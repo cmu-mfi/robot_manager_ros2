@@ -1,0 +1,15 @@
+# GOAL
+geometry_msgs/Pose target_pose
+float64 velocity_scaling
+float64 acceleration_scaling
+string frame_id           # Leave emtpy to use base_link, otherwise any link is accepted
+string target_id          # Leave empty to use tool0, otherwise any child frame of tool0 is accepted
+string method             # PTP or LIN
+---
+# RESULT
+bool success
+int32 error_code          # 0=None, 1=planning_failed, 2=exectution_failed, 3=cancelled
+string message            # Human-readable status
+---
+# FEEDBACK
+float32 progress

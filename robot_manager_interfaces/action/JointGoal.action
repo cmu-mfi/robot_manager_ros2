@@ -1,0 +1,12 @@
+# GOAL
+float64[] positions
+float64 velocity_scaling
+float64 acceleration_scaling
+---
+# RESULT
+bool success
+int32 error_code          # 0=None, 1=planning_failed, 2=exectution_failed, 3=cancelled
+string message            # Human-readable status
+---
+# FEEDBACK
+float32 progress
