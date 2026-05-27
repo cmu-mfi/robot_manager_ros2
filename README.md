@@ -1,7 +1,23 @@
 # Robot Manager ROS2
 This repository holds the ros2 interfaces used by any robot_manager. The purpose of these is to abstract any robot specific control onto behind these ros2 actions and services, allowing for robot-agnostic programming. 
 
-## Implementation
+## ⚙️ Prerequisites and Dependencies
+
+This repository has been tested on:
+
+  * **OS:** Ubuntu 24.04 LTS
+  * **ROS 2:** Jazzy
+
+### Install dependencies using rosdep
+Clone this repository into the `src` directory of your ros2 workspace.
+
+```bash
+cd <your-ros2-workspace>
+rosdep update
+rosdep install --from-paths src --ignore-src -r -y
+```
+
+## Making a robot manager
 For a fully working robot manager, the following interfaces have to be implemented:
 | Interface     | Type             | Description                                                                   |
 | ------------- | ---------------- | ----------------------------------------------------------------------------- |
