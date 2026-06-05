@@ -1,0 +1,7 @@
+# Request
+float64 mass
+geometry_msgs/Vector3 cog  # X, Y, Z coordinates in meters
+---
+# Response
+bool success
+string message

@@ -20,6 +20,7 @@ set(action_files
 )
 set(service_files
   "srv/Home.srv"
+  "srv/SetPayload.srv"
 )
 
 # Generate the interfaces
