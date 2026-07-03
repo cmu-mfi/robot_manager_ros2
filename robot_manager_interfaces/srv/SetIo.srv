@@ -1,0 +1,7 @@
+# Request
+int8 pin   # Digital Output Pin Range
+int8 state # 1: High, 0: Low
+---
+# Response
+bool success
+string message

@@ -22,6 +22,7 @@ set(service_files
   "srv/Home.srv"
   "srv/Park.srv"
   "srv/SetPayload.srv"
+  "srv/SetIo.srv"
 )
 
 # Generate the interfaces
