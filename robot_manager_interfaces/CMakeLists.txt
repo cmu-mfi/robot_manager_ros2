@@ -14,6 +14,9 @@ find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 
 # List the files
+set(message_files
+  "msg/PoseServo.msg"
+)
 set(action_files
   "action/JointGoal.action"
   "action/PoseGoal.action"
@@ -27,6 +30,7 @@ set(service_files
 
 # Generate the interfaces
 rosidl_generate_interfaces(${PROJECT_NAME}
+  ${message_files}
   ${action_files}
   ${service_files}
   DEPENDENCIES action_msgs std_msgs geometry_msgs
