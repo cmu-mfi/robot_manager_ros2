@@ -1,4 +1,4 @@
-geometry_msgs/Wrench target_wrench   # Target Wrench: Forces [Fx, Fy, Fz] in Newtons and Torques [Tx, Ty, Tz] in Nm
+geometry_msgs/Wrench target_wrench   # Target Wrench: Forces [Fx, Fy, Fz] in Newtons and Torques [Tx, Ty, Tz] in Nm (in tool0 frame)
 bool[6] selection_vector             # Axis Selection Vector [Fx, Fy, Fz, Tx, Ty, Tz] (true, false)
 float64[6] mass                      # Mass / Inertia: Linear mass (kg) and Rotational inertia (kg*m^2)
 float64[6] damping                   # Damping: Linear damping (N*s/m) and Rotational damping (N*m*s/rad)
